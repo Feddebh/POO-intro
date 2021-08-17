@@ -10,10 +10,11 @@ public class Auto {
     //Constructor
 
     public Auto(String marca, String modelo, int anio) {
-        marca = marca;
-        modelo = modelo;
-        anio = anio;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
     }
+
 
     //Metodo
 
@@ -21,4 +22,29 @@ public class Auto {
         System.out.println("El auto marca " +  marca + " " + modelo + " anio " + anio + " esta arrancando.");
     }
 
+    //getters
+
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getAnio(){
+        return anio;
+    }
+
+    //setters
+    public void setMarca(String marcaNueva) {marca = marcaNueva;}
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
 }
